@@ -1,0 +1,17 @@
+.checkbox-grid
+{
+    margin-bottom: 0;
+}
+.checkbox-grid li {
+    display: inline-block;
+    width: 15%;
+}
+
+  input {
+    margin-right:5mm;
+  }
+
+.form-group
+{
+    margin: 5 cm;
+}

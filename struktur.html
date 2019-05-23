@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>US LVI allmennpraksis</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles_struktur.css">
+</head>
+<body>
+ 
+<div class="jumbotron jumbotron-fluid" style="padding:0%;">
+    <div class="container">
+      <h1 class="display-4">US Luftveisinfeksjon</h1>
+      <p class="lead">Template for us ved mistanke om LVI i allmennpraksis.</p>
+    </div>
+</div>
+<div class="jumbotron jumbotron-fluid" style="padding:0%;color: steelblue;">
+    <div class="container">
+      <p class="lead">Anamnestiske opplysninger.</p>
+    </div>
+</div>
+
+<form class="form-inline">
+    Dager syk
+    <input type="number" style="color:black;width: 2cm;" name="dagersyk" id="dagersyk"/>
+
+    <label class="checkbox-inline" style="margin:5mm;"><input type="checkbox" value="" id="hoste" style="margin-right:5mm;">Hoste</label>
+    <label class="checkbox-inline" style="margin:5mm;"><input type="checkbox" value="" id="slapp" style="margin-right:5mm;">Slapphetsfølelse</label>
+    <label class="checkbox-inline" style="margin:5mm;"><input type="checkbox" value="" id="frostrier" style="margin-right:5mm;">Frostrier</label> 
+    <label class="checkbox-inline" style="margin:5mm;"><input type="checkbox" value="" id="dysfagi" style="margin-right:5mm;">Dysfagi</label> 
+    <label class="checkbox-inline" style="margin:5mm;"><input type="checkbox" value="" id="smerter" style="margin-right:5mm;">Smerter</label> 
+
+</form> 
+
+<div class="jumbotron jumbotron-fluid" style="padding:0%;color: steelblue;">
+    <div class="container">
+        <p class="lead">US.</p>
+    </div>
+</div>
+
+<form class="form-inline">
+<div class="form-group">
+        Allmenntilstand:
+          <select id="AT" class="form-control" style="margin-right:1cm;" id ="AT">
+            <option></option>
+            <option value="God">God</option>
+            <option value="Noe medtatt">Noe medtatt</option>
+            <option value="Medtatt">Medtatt</option>
+            <option value="Kritisk dårlig">Kritisk dårlig</option>
+          </select>
+        
+          Hud:
+          <select id="hud" class="form-control" style="margin-right:1cm;">
+            <option></option>
+            <option value="Tørr og varm">Tørr og varm</option>
+            <option value="Kald og klam">Kald og klam</option>
+            <option value="Blek">Blek</option>
+          </select> 
+
+          RF:<br>
+  <input type="number" style="color:black;width: 2cm;" name="RF" id="RF" />
+          HF:<br>
+  <input type="number" style="color:black;width: 2cm;" name="HF" id="HF" />
+</div> 
+
+</form>
+
+
+<ul class="checkbox-grid">
+  <li style="color:tomato">Svelg</li>
+  <li><input type=checkbox id="svelg_ua" value="" /><label for="svelg_ua">Ua</label></li>
+  <li><input type=checkbox id="svelg_rubor" value="" /><label for="svelg_rubor">Rubor</label></li>
+  <li><input type=checkbox id="svelg_tonsillehypertrofi" value="" /><label for="svelg_tonsillehypertrofi">Tonsillehypertrofi</label></li>
+  <li><input type=checkbox id="svelg_tonsillebelegg" value="" /><label for="svelg_tonsillebelegg">Tonsillebelegg</label></li>
+  <li><input type=checkbox id="svelg_foetus" value="" /><label for="svelg_foetus">Foetus</label></li>
+</ul>
+
+<ul class="checkbox-grid">
+    <li style="color:tomato">Collum</li>
+    <li><input type=checkbox id="collum_ua" value="" /><label for="collum_ua">Ua</label></li>
+    <li><input type=checkbox id="collum_glandelhypertrofi" value="" /><label for="collum_glandelhypertrofi">Glandelhypertrofi</label></li>
+    <li><input type=checkbox id="collum_ømhetvinkler" value="" /><label for="collum_ømhetvinkler">Ømhet kjevevinkler</label></li>
+</ul>
+
+<ul class="checkbox-grid">
+    <li style="color:tomato">Nasalt</li>
+    <li><input type="checkbox" id="nasalt_ua" value="" /><label for="nasalt_ua">Ua</label></li>
+    <li><input type="checkbox" id="nasalt_tett" value="" /><label for="nasalt_tett">Tett/munnpust</label></li>
+    <li><input type="checkbox" id="nasalt_sinusitt" value="" /><label for="nasalt_sinusitt">Sinusittsymptomer</label></li>
+    <li><input type="checkbox" id="nasalt_tykksekresjon" value="" /><label for="nasalt_tykksekresjon">Tykk sekresjon</label></li>
+</ul>
+
+<ul class="checkbox-grid">
+    <li style="color:tomato">Otologisk</li>
+    <li><input type="checkbox" id="otologisk_ua" value="" /><label for="otologisk_ua">Ua</label></li>
+    <li><input type="checkbox" id="otologisk_otittvs" value="" /><label for="otologisk_otittvs">Otitt sin</label></li>
+    <li><input type="checkbox" id="otologisk_otitths" value="" /><label for="otologisk_otitths">Otitt dxt</label></li>
+    <li><input type="checkbox" id="otologisk_perforasjon" value="" /><label for="otologisk_perforasjon">Perforasjon</label></li>
+</ul>
+
+<ul class="checkbox-grid">
+    <li style="color:tomato">Auskultasjon pulm</li>
+    <li><input type="checkbox" id="auspulm_ua" value="" /><label for="auspulm_ua">Ua</label></li>
+    <li><input type="checkbox" id="auspulm_knatr" value="" /><label for="auspulm_knatr">Knatre-/fremmedlyd</label></li>
+    <li><input type="checkbox" id="auspulm_obstr" value="" /><label for="auspulm_obstr">Obstruktiv</label></li>
+</ul>
+
+<ul class="checkbox-grid">
+
+    <li style="color: tomato">Lab</li>
+    <li><input type="checkbox" id="lab_tp" value="" /><label for="lab_tp">Tp</label></li>
+    <li><input type="checkbox" id="lab_crp" value="" /><label for="lab_crp">CRP</label></li>
+    <li><input type="checkbox" id="lab_strepa" value="" /><label for="lab_strepa">StrepA</label></li>
+    <li><input type="checkbox" id="lab_monospot" value="" /><label for="lab_monospot">Monospot</label></li>
+</ul>
+
+<script type="text/javascript">
+
+var output = "";
+var paramarr = [];
+
+function set_output(string_in)
+{
+  output = string_in;
+  paramarr = output.split(",");
+  console.log ("Output set!");
+  console.log (paramarr);
+  document.getElementById("dagersyk").value = paramarr[0];
+   document.getElementById("hoste").checked = parseInt(paramarr[1]);
+   document.getElementById("slapp").checked = parseInt(paramarr[2]);
+   document.getElementById("frostrier").checked = parseInt(paramarr[3]);
+   document.getElementById("dysfagi").checked = parseInt(paramarr[4]);
+   document.getElementById("smerter").checked = parseInt(paramarr[5]);
+   
+   document.getElementById("AT").value = decodeURI(paramarr[6]);
+   document.getElementById("hud").value = decodeURI(paramarr[7]);
+   document.getElementById("RF").value = paramarr[8];
+   document.getElementById("HF").value = paramarr[9];
+
+   document.getElementById("svelg_ua").checked = parseInt(paramarr[10]);
+   document.getElementById("svelg_rubor").checked = parseInt(paramarr[11]);
+   document.getElementById("svelg_tonsillehypertrofi").checked = parseInt(paramarr[12]);
+   document.getElementById("svelg_tonsillebelegg").checked = parseInt(paramarr[13]);
+   document.getElementById("svelg_foetus").checked = parseInt(paramarr[14]);
+
+   document.getElementById("collum_ua").checked = parseInt(paramarr[15]);
+   document.getElementById("collum_glandelhypertrofi").checked = parseInt(paramarr[16]);
+   document.getElementById("collum_ømhetvinkler").checked = parseInt(paramarr[17]);
+
+   document.getElementById("nasalt_ua").checked = parseInt(paramarr[18]);
+   document.getElementById("nasalt_tett").checked = parseInt(paramarr[19]);
+   document.getElementById("nasalt_sinusitt").checked = parseInt(paramarr[20]);
+   document.getElementById("nasalt_tykksekresjon").checked = parseInt(paramarr[21]);
+
+   document.getElementById("otologisk_ua").checked = parseInt(paramarr[22]);
+   document.getElementById("otologisk_otittvs").checked = parseInt(paramarr[23]);
+   document.getElementById("otologisk_otitths").checked = parseInt(paramarr[24]);
+   document.getElementById("otologisk_perforasjon").checked = parseInt(paramarr[25]);
+
+   document.getElementById("auspulm_ua").checked = parseInt(paramarr[26]);
+   document.getElementById("auspulm_knatr").checked = parseInt(paramarr[27]);
+   document.getElementById("auspulm_obstr").checked = parseInt(paramarr[28]);
+
+   document.getElementById("lab_tp").checked = parseInt(paramarr[29]);
+   document.getElementById("lab_crp").checked = parseInt(paramarr[30]);
+   document.getElementById("lab_strepa").checked = parseInt(paramarr[31]);
+   document.getElementById("lab_monospot").checked = parseInt(paramarr[32]);
+
+}
+
+function readfromTextFile(file)
+{
+  fetch(file)
+  .then(response => response.text())
+  .then(text => set_output(text))
+}
+
+   // var a = location.search.substring(1);
+    
+  readfromTextFile("strukturparams.txt");
+   
+  //  file:///struktur.html?7,0,0,0,1,1,Noe medtatt,Kald og klam,12,70,0,1,0,1,1,0,1,1,0,1,1,1,0,0,1,1,0,1,0,1,1,0,0
+
+
+</script>
+
+</html>
